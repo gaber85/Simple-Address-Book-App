@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="icon" type="image/png" href="image.png" <meta charset="utf-8">
+    <title>Address Book App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="main-title">Address Book App</div>
+        <div class="search-area">
+            <form class="the-flex">
+                <input type="search" autocomplete="off" class="search-bar-length" name="search-bar" placeholder="Search Name...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <!--This section is the table header-->
+
+        </div>
+        <div class="blank-line"></div>
+        <div class="contacts-table-title">
+            <div class="table-title">All Contacts</div>
+            <div class="button-plus-icon tooltip" id="add-button">
+                <i class="fa fa-plus-circle"></i>
+                <span class="tooltext">Add Contact</span>
+            </div>
+
+        </div>
+
+        <div class="line-break"></div>
+
+        <!--This section contains the modal and contact form-->
+
+        <div class="the-modal" id="theModal">
+            <div class="inside-modal">
+                <span class="close" id="closeButton">&times;</span>
+                <div id="contactForm">
+                    <label for="firstName">First Name:<br></label>
+                    <input type="text" id="firstName" autocomplete="off"><br>
+                    <label for="lastName">Last Name:<br></label>
+                    <input type="text" id="lastName" autocomplete="off"><br>
+                    <label for="phone">Phone Number:<br></label>
+                    <input type="tel" id="phone" autocomplete="off"><br>
+                    <label for="address">Address:<br></label>
+                    <input type="text" id="address" autocomplete="off"><br><br>
+                    <button id="submit-new">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!--This section contains the delete confirmation-->
+
+        <div class="the-modal" id="deleteModal">
+            <div class="inside-modal">
+                <div id="delete-prompt">
+                    Delete Contact?<br><br>
+                    <button id="delete-contactz">Yes</button>
+                    <button id="no-delete">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!--This section is a row including name and trash icon-->
+        <div id="name-area">
+
+
+
+        </div>
+
+        <!--This is the bottom of the rendered table-->
+
+        <div class="bottom-of-table"></div>
+
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+
+</html>
