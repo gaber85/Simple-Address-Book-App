@@ -11,13 +11,13 @@
 <body>
 
     <div class="main">
-
+        <!--This section contains the search bar-->
         <div class="main-title">Address Book App</div>
         <div class="search-area">
-            <form class="the-flex">
-                <input type="search" autocomplete="off" class="search-bar-length" name="search-bar" placeholder="Search Name...">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <div class="the-flex">
+                <input type="text" autocomplete="off" class="search-bar-length" id="search-input" onkeyup="searchName()" placeholder="Search Name...">
+                <button onclick="resetNames()"><i class="fa fa-undo"></i></button>
+            </div>
 
             <!--This section is the table header-->
 
@@ -32,7 +32,7 @@
 
         </div>
 
-        <div class="line-break"></div>
+        <!-- <div class="line-break"></div>-->
 
         <!--This section contains the modal and contact form-->
 
@@ -71,14 +71,18 @@
 
 
         </div>
+        <div id="search-results">
+
+        </div>
 
         <!--This is the bottom of the rendered table-->
 
         <div class="bottom-of-table"></div>
 
     </div>
-
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
     <script type="text/javascript" src="./index.js"></script>
+    <script src="./jquery.js"></script>
 </body>
 
 
